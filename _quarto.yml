@@ -10,7 +10,7 @@ book:
   page-navigation: true
   reader-mode: true
   cover-image: hardcover.png
-  favicon: favicon.ico
+  favicon: hardcover.png
   title: "Probabilidade & Estatística"
   subtitle: "Um curso para o PROFMAT"
   author: "Ben Dêivide de O. Batista </br> Andre F. Barboza </br> Francismara F. Guerra </br> Isabella S. Cruz </br> Jomara S. Pereira </br> José M. dos Santos </br> Leonardo B. da Silva </br> Luciano R. Coelho </br> Tatiana M. S. Brandão"
@@ -28,5 +28,5 @@ book:
 format:
   html:
     theme: flatly
-  pdf:
-    documentclass: scrreprt
+  # pdf:
+  #   documentclass: scrreprt
