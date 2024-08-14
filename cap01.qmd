@@ -1,0 +1,51 @@
+# Definições gerais da estatística {#sec-chap01}
+
+<!-- Auxílio na escrita: https://quarto.org/docs/authoring/cross-references.html -->
+
+## Introdução
+
+A estatística é uma ciência que estuda a coleta, organização, análise e registro de dados, sendo necessária tanto em nossa vida pessoal quanto em diversos ramos da sociedade. Isso porque essa área do conhecimento é capaz de fornecer informações que irão influenciar nossas decisões a serem tomadas através dos dados a serem utilizados para analisar fenômenos do passado norteando-nos possíveis situações que poderão ocorrer no futuro.
+
+Na sessão a seguir, trabalharemos as definições gerais da Estatística, onde serão definidos os conceitos de população e amostra. Para iniciar o estudo da Estatística precisamos compreender alguns conceitos. Um deles é a ideia de população,  @def-pop.
+
+
+:::{#def-pop}
+
+## População
+
+A População é definida como um grupo ou conjunto de elementos que serão o objeto de estudo de uma pesquisa. O número de elementos é denotado por "$N$".
+
+:::
+
+No entanto, quando pensamos em população, logo vem à mente um conjunto de pessoas com características em comum, seja pessoas que moram em uma mesma cidade, bairro, comunidade rural, etc. Para ilustrar, vejamos o @exm-gpizzas.
+
+:::{#exm-gpizzas}
+
+Vamos pensar numa sala de aula. Supomos que um pesquisador fará um estudo sobre as características dos alunos do 3º ano do ensino médio de uma escola estadual e que deseja saber como é o desempenho da turma diante da disciplina de Matemática. O conjunto de alunos dessa referida classe no ano considerado é a população que será estudada. Algumas informações poderão fazer parte do estudo, como, por exemplo, o sexo (masculino ou feminino), idade, ou classe social (classes baixa, média ou alta) a que está inserida. Podemos representar essas informações por meio de gráficos, como exemplo, usamos um  gráfico de pizzas para representar a característica dos alunos do 3º ano em relação ao seu sexo, @fig-gpizzas.
+
+![Exemplo de Gráfico de pizzas.](images/jomara1figura.png){#fig-gpizzas width=50%}
+:::
+
+Uma população pode ser subdividida quanto ao número de elementos que a compõe, definida a seguir.
+
+:::{#def-popinffin}
+
+## População finita e infinita 
+
+Dizemos que uma população é classificada finita quando o conjunto de elementos que a compões é limitado. Ao passo que uma população é infinita quando não há possibilidades de mensurar a quantidade de elementos que a compõe.
+:::
+
+Os funcionários de uma papelaria, o número de vendas de picolés de uma sorveteria, as agências dos Correios de uma região de uma cidade, são ilustrações de populações finitas. Nesses casos, percebe-se que o número de elementos que compõe esse tipo de população é pequeno. Já a concentração de poluentes em um rio, leituras de sensores de uma máquina industrial, o número de estrelas em uma galáxia ou os pontos de uma reta, constituem populações infinitas. 
+
+Ao pensarmos na relação tempo e custo de uma pesquisa, muitas das vezes torna-se oneroso trabalhar com uma população inteira, em função do número de dias, meses ou anos, bem como do dinheiro envolvido para a realização da coleta de dados. Uma outra possibilidade da inviabilidade é não ter acesso a todos os elementos da população que se deseja estudar. Em função disso, trabalhamos com um subgrupo representativo dessa população, a qual denominamos de amostra.
+
+:::{#def-amostra}
+
+## Amostra
+
+Uma amostra é um subconjunto da população que é o objeto de análise da pesquisa. O número de elementos de uma amostra é "$n$".
+:::
+
+Em termos mais simples, podemos dizer que a amostra é uma parte que irá representar a população que desejamos realizar a pesquisa, conforme a @fig-popamostra.
+
+![População e amostra.](images/pop-amostra.png){#fig-popamostra width=50%}

@@ -22,6 +22,7 @@ book:
       Esse livro foi desenvolvido com o <a href="https://quarto.org/">Quarto</a>.
   chapters:
     - index.qmd
+    - cap01.qmd
     - references.qmd
 
 #https://quarto.org/docs/output-formats/html-themes.html
