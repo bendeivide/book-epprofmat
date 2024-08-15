@@ -69,6 +69,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Procurar"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -172,6 +175,16 @@ window.Quarto = {
    
   <ul>
   <li><a href="#introdução" id="toc-introdução" class="nav-link active" data-scroll-target="#introdução"><span class="header-section-number">1.1</span> Introdução</a></li>
+  <li><a href="#definições-gerais" id="toc-definições-gerais" class="nav-link" data-scroll-target="#definições-gerais"><span class="header-section-number">1.2</span> Definições gerais</a>
+  <ul class="collapse">
+  <li><a href="#estatística-descritiva" id="toc-estatística-descritiva" class="nav-link" data-scroll-target="#estatística-descritiva"><span class="header-section-number">1.2.1</span> Estatística Descritiva</a></li>
+  <li><a href="#estatística-inferencial-ou-estatística-indutiva" id="toc-estatística-inferencial-ou-estatística-indutiva" class="nav-link" data-scroll-target="#estatística-inferencial-ou-estatística-indutiva"><span class="header-section-number">1.2.2</span> Estatística Inferencial ou Estatística Indutiva</a></li>
+  <li><a href="#probabilidade" id="toc-probabilidade" class="nav-link" data-scroll-target="#probabilidade"><span class="header-section-number">1.2.3</span> Probabilidade</a></li>
+  </ul></li>
+  <li><a href="#tipos-de-variáveis" id="toc-tipos-de-variáveis" class="nav-link" data-scroll-target="#tipos-de-variáveis"><span class="header-section-number">1.3</span> Tipos de variáveis</a>
+  <ul class="collapse">
+  <li><a href="#variáveis-qualitativas-e-quantitativas" id="toc-variáveis-qualitativas-e-quantitativas" class="nav-link" data-scroll-target="#variáveis-qualitativas-e-quantitativas"><span class="header-section-number">1.3.1</span> Variáveis qualitativas e quantitativas</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -221,7 +234,7 @@ Figura&nbsp;1.1: Exemplo de Gráfico de pizzas.
 </div>
 <p>Uma população pode ser subdividida quanto ao número de elementos que a compõe, definida a seguir.</p>
 <div id="def-popinffin" class="theorem definition">
-<p><span class="theorem-title"><strong>Definição 1.2 (População finita e infinita)</strong></span> Dizemos que uma população é classificada finita quando o conjunto de elementos que a compões é limitado. Ao passo que uma população é infinita quando não há possibilidades de mensurar a quantidade de elementos que a compõe.</p>
+<p><span class="theorem-title"><strong>Definição 1.2 (População finita e infinita)</strong></span> Uma população é classificada finita quando o conjunto de elementos que a compões é limitado. Ao passo que uma população é infinita quando não há possibilidades de mensurar a quantidade de elementos que a compõe.</p>
 </div>
 <p>Os funcionários de uma papelaria, o número de vendas de picolés de uma sorveteria, as agências dos Correios de uma região de uma cidade, são ilustrações de populações finitas. Nesses casos, percebe-se que o número de elementos que compõe esse tipo de população é pequeno. Já a concentração de poluentes em um rio, leituras de sensores de uma máquina industrial, o número de estrelas em uma galáxia ou os pontos de uma reta, constituem populações infinitas.</p>
 <p>Ao pensarmos na relação tempo e custo de uma pesquisa, muitas das vezes torna-se oneroso trabalhar com uma população inteira, em função do número de dias, meses ou anos, bem como do dinheiro envolvido para a realização da coleta de dados. Uma outra possibilidade da inviabilidade é não ter acesso a todos os elementos da população que se deseja estudar. Em função disso, trabalhamos com um subgrupo representativo dessa população, a qual denominamos de amostra.</p>
@@ -239,8 +252,78 @@ Figura&nbsp;1.2: População e amostra.
 </figcaption>
 </figure>
 </div>
+<p>Vejamos o <a href="#exm-pop_amostra" class="quarto-xref">Exemplo&nbsp;<span>1.2</span></a> de amostra em uma pesquisa.</p>
+<div id="exm-pop_amostra" class="theorem example">
+<p><span class="theorem-title"><strong>Exemplo 1.2</strong></span> Vamos considerar uma fábrica de peças automotivas. Nessa fábrica existem três linhas de produção – cinto de segurança, freio de mão e pedal. Não é possível, pelo tempo e pelo custo, fazer uma inspeção em todas as três linhas de produção, mas é possível verificar a qualidade e assertividade do trabalho recolhendo-se amostras, em três momentos distintos da fabricação - início, meio e fim. A amostra é um importante recurso, pois traz essa vantagem da economia de tempo e rapidez, mas pode ocorrer alguma falha, quando não mostrar algum objeto defeituoso, que por ventura, possa não aparecer.</p>
+</div>
+<p>Alguns exemplos da influência da estatística no nosso cotidiano são as previsões climáticas, os índices de aumento ou queda de desemprego, as pesquisas de âmbitos eleitorais, as pesquisas de satisfação de clientes, os indicadores de negócios, entre diversos outros. É difícil pensar em uma área onde as técnicas estatísticas não possam ser aplicadas. Entretanto, seus resultados também estão associados a pequenas incertezas, pois são baseados em uma amostra e podem conter uma pequena margem de erro, assunto esse que será tratado na próxima sessão.</p>
+</section>
+<section id="definições-gerais" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="definições-gerais"><span class="header-section-number">1.2</span> Definições gerais</h2>
+<p>Dentre as definições gerais da Estatística, destacamos: Estatística Descritiva, a Estatística Inferencial e a Probabilidade na estatística.</p>
+<section id="estatística-descritiva" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="estatística-descritiva"><span class="header-section-number">1.2.1</span> Estatística Descritiva</h3>
+<p>A Estatística Descritiva ou Estatística Dedutiva tem por objetivo a apresentação das principais características de um conjunto de dados que serão representados por meio de tabelas, gráficos e números. Ou seja, visa proporcionar medidas que sintetizem as informações dos dados coletados que são os valores observados da pesquisa, a fim de torná-las menos complexas e melhor compreendidas.</p>
+</section>
+<section id="estatística-inferencial-ou-estatística-indutiva" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="estatística-inferencial-ou-estatística-indutiva"><span class="header-section-number">1.2.2</span> Estatística Inferencial ou Estatística Indutiva</h3>
+<p>A Estatística Inferencial consiste em analisar uma amostra (que é a redução da população em uma dimensão menor) a fim de expandir as informações contidas nessa amostra à toda a população - que é o objeto de investigação. Um exemplo seria o interesse de um sorveteiro em saber se seu sorvete está apto para comercialização antes de colocá-lo à venda, então ele degusta uma pequena porção para ter uma referência de como está o lote inteiro do sorvete.</p>
+<p>Podemos compreender melhor o que seria amostra e população da seguinte maneira: a população da pesquisa corresponde ao lote inteiro do sorvete e a amostra como a parte que foi retirada para a degustação.</p>
+<p>Assim, para que tenhamos o entendimento das informações contidas na amostra da população, é necessário a utilização de técnicas específicas da estatística a fim de que essas informações sejam as mais confiáveis possíveis. Nesse sentido, a inferência estatística deve se preocupar com o grau de incerteza dessas generalizações da população e para isso conta a probabilidade como suporte.</p>
+</section>
+<section id="probabilidade" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="probabilidade"><span class="header-section-number">1.2.3</span> Probabilidade</h3>
+<p>A probabilidade é uma teoria importante na matemática, ela estuda a incerteza dos fenômenos aleatórios, tendo em vista que engloba as possibilidades de situações ocorrerem ou não. Essas chances são medidas a partir da razão do número de chances favoráveis pelo total dos casos possíveis. Desta forma, a probabilidade de um evento <span class="math inline">\(A\)</span> ocorrer, pode ser definida pela seguinte fórmula:</p>
+<p><span class="math display">\[
+P(A) = \frac{\textrm{número de chances favoráveis ao evento A}}{\textrm{total de casos possíveis}}.
+\]</span></p>
+<p>No nosso dia-a-dia a probabilidade atua de forma bem positiva, auxiliando em decisões importantes, como na vida financeira de uma empresa, através dos cálculos de lucro ou prejuízos, bem como nos cálculos das chances de um time ganhar um jogo em um campeonato de futebol.</p>
+<p>Nos últimos dois anos, a probabilidade foi muito utilizada na condução dos procedimentos referentes à pandemia pela Covid-19, quando a OMS – Organização Mundial de Saúde – levou em conta evidências da relação de contato de pessoas com máscara e sem máscara, contaminação de pessoas quando estão em lugares abertos e fechados e até mesmo a relação da imunização com as vacinas e a proteção vacinal após a imunização, em comparação a não vacinados.</p>
+<p>Por fim, será por meio da probabilidade que a estatística inferencial irá ser desenvolvida para o embasamento teórico das metodologias criadas para extrapolar as informações amostrais à população.</p>
+<p>A seguir, trataremos das variáveis de interesse para estudo de uma população.</p>
+</section>
+</section>
+<section id="tipos-de-variáveis" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="tipos-de-variáveis"><span class="header-section-number">1.3</span> Tipos de variáveis</h2>
+<p>As variáveis de uma pesquisa são informações das características que são coletadas dentro do processo da Amostragem, que irão auxiliar na compreensão da população que está sendo amostrada.</p>
+<div id="def-variavel" class="theorem definition">
+<p><span class="theorem-title"><strong>Definição 1.4 (Variável)</strong></span> Uma variável representa a característica dos elementos da população da pesquisa, do qual se deseja estudar. Usamos letras maiúsculas: <span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span>, <span class="math inline">\(W\)</span>, …, para representar as variáveis de interesse. O resultado observado das variáveis aos elementos, representam as realizações ou valores observados, e denotamos por letras minúsculas: <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>, <span class="math inline">\(w\)</span>, etc..</p>
+</div>
+<p>Dessa forma, cada característica coletada, como idade, sexo, peso e altura corresponde a uma variável. Quanto a sua natureza, ela é classificada em qualitativa ou quantitativa, descritos a seguir.</p>
+<section id="variáveis-qualitativas-e-quantitativas" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="variáveis-qualitativas-e-quantitativas"><span class="header-section-number">1.3.1</span> Variáveis qualitativas e quantitativas</h3>
+<p>As variáveis podem ser divididas em quantitativas – discreta ou contínua ou qualitativas – nominal ou ordinal, conforme ilustra a <a href="#fig-natvariavel" class="quarto-xref">Figura&nbsp;<span>1.3</span></a>.</p>
+<div id="fig-natvariavel" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-natvariavel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+    B["Natureza das variáveis"]
+    B--&gt;C("Variáveis qualitativas")
+    B--&gt;D("Variáveis quantitativas")
+    C--&gt;E{{"Nominal"}}
+    C--&gt;G{{"Ordinal"}}
+    D--&gt;H{{"Discreta"}}
+    D--&gt;I{{"Contínua"}}
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-natvariavel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1.3: Natureza das variáveis.
+</figcaption>
+</figure>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
